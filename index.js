@@ -36,5 +36,6 @@ const DOMSelectors = {
 // DOMSelectors.box.insertAdjacentHTML("afterend", `<h1>We are an </h1>`);
 DOMSelectors.button.addEventListener("click", function () {
   let input = DOMSelectors.input.value;
-  DOMSelectors.box.insertAdjacentHTML("afterend", <p>${input}</p>);
+  DOMSelectors.box.insertAdjacentHTML("afterend", `<p>${input}</p>`);
+  console.log(input);
 });
