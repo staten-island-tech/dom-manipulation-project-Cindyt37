@@ -1,6 +1,19 @@
-body, html, * {
-    background-color: black;
-    font-size: 2vh;
-    color: cornsilk;
-    text-align: center;
+html, body, * {
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(183, 220, 252);
+    background: rgb(23, 28, 87);
+}
+
+#container {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+p {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+#Enter {
+    text-decoration: underline;
 }
