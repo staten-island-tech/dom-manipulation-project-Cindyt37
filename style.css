@@ -17,3 +17,11 @@ p {
 #Enter {
     text-decoration: underline;
 }
+
+#output {
+    background-color: rgb(41, 76, 173);
+    padding: 20px;
+    border-radius: 5px;
+    width: 500px;
+    margin-left: 10px;
+}
