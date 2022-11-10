@@ -5,7 +5,7 @@ html, body, * {
     background: rgb(23, 28, 87);
 }
 
-#container {
+#container-box {
     margin-left: 10px;
     margin-top: 10px;
 }
@@ -14,14 +14,27 @@ p {
     font-size: 25px;
 }
 
-#Enter {
-    text-decoration: underline;
+.output {
+    background-color: rgb(54, 98, 243);
+    margin-bottom: 20px;
+    padding: 20px;
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 700px;
+    text-align: center;
 }
 
-#output {
-    background-color: rgb(41, 76, 173);
-    padding: 20px;
-    border-radius: 5px;
-    width: 500px;
-    margin-left: 10px;
+h3 {
+    background-color: rgb(54, 98, 243);
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+#title {
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.image {
+    margin-bottom: 15px;
+    width: 100%;
 }

@@ -17,9 +17,9 @@ DOMSelectors.button.addEventListener("click", function () {
   DOMSelectors.output.insertAdjacentHTML(
     "afterbegin",
     `<div class="output">
-        <h3>${input}</h3>
+        <h3 id="title">${input}</h3>
         <h3>${input2}</h3>
-        <img src="${input3}">
+        <img class="image" src="${input3}">
         <br>
         <button class= "button" onclick="this.parentElement.Remove()">Remove</button></div>`
   );
