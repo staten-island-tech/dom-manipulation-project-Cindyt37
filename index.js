@@ -18,7 +18,7 @@ DOMSelectors.button.addEventListener("click", function () {
     "afterbegin",
     `<div class="output">
         <h3>${input}</h3>
-       <h3>${input2}</h3>
+        <h3>${input2}</h3>
         <img src="${input3}">
         <br>
         <button class= "button" onclick="this.parentElement.Remove()">Remove</button></div>`
