@@ -21,6 +21,12 @@ DOMSelectors.button.addEventListener("click", function () {
         <h3>${input2}</h3>
         <img class="image" src="${input3}">
         <br>
-        <button class= "button" onclick="this.parentElement.Remove()">Remove</button></div>`
+        <button class= "remove" onclick=">Remove</button></div>`
   );
+  function removeOutput() {
+    DOMSelectors.forEach((removeButton) => {
+      removeButton.remove();
+    });
+  }
+  removeOutput();
 });
