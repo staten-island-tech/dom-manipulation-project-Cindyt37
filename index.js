@@ -6,6 +6,10 @@ const DOMSelectors = {
   input3: document.querySelector(`#url`),
   output: document.getElementById("output"),
 };
+output.addEventListener("click", function () {
+  var child = document.querySelector(`#output`);
+  child.parentNode.removeChild(child);
+});
 
 DOMSelectors.button.addEventListener("click", function () {
   let input = DOMSelectors.input.value;
@@ -21,12 +25,7 @@ DOMSelectors.button.addEventListener("click", function () {
         <h3>${input2}</h3>
         <img class="image" src="${input3}">
         <br>
-        <button class= "remove" onclick=">Remove</button></div>`
+        <button onclick="myFunction()">Remove</button>
+        </div>`
   );
-  function removeOutput() {
-    DOMSelectors.forEach((removeButton) => {
-      removeButton.remove();
-    });
-  }
-  removeOutput();
 });
