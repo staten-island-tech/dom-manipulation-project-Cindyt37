@@ -6,10 +6,6 @@ const DOMSelectors = {
   input3: document.querySelector(`#url`),
   output: document.getElementById("output"),
 };
-// output.addEventListener("click", function () {
-//   var child = document.querySelector(`#output`);
-//   child.parentNode.removeChild(child);
-// });
 
 DOMSelectors.button.addEventListener("click", function () {
   let input = DOMSelectors.input.value;
@@ -21,12 +17,18 @@ DOMSelectors.button.addEventListener("click", function () {
   DOMSelectors.output.insertAdjacentHTML(
     "afterbegin",
     `<div class="output">
-        <h3 id="title">${input}</h3>
-        <h3>${input2}</h3>
+        <h3 class="title">${input}</h3>
+        <h3 class="weapon">${input2}</h3>
         <img class="image" src="${input3}">
         <button class="remove">Remove</button>
         </div>`
   );
-  const remove = document.querySelectorALL(".remove");
-  remove.forEach((eachRemove) => {});
+  const remove = document.querySelectorAll(".remove");
+  remove.forEach((eachRemove) => {
+    eachRemove.addEventListener("click", () => {
+      const element = document.querySelector(".output");
+      element.remove();
+      eachRemove.remove();
+    });
+  });
 });
