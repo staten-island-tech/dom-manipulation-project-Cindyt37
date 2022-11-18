@@ -4,7 +4,7 @@ const DOMSelectors = {
   input: document.querySelector(`#name`),
   input2: document.querySelector(`#weapon`),
   input3: document.querySelector(`#url`),
-  output: document.getElementById("output"),
+  output: document.getElementById("output-box"),
 };
 
 DOMSelectors.button.addEventListener("click", function () {
@@ -23,8 +23,8 @@ DOMSelectors.button.addEventListener("click", function () {
         <button class="remove">Remove</button>
         </div>`
   );
-  const remove = document.querySelectorAll(".remove");
-  remove.forEach((eachRemove) => {
+  const removes = document.querySelectorAll(".remove");
+  removes.forEach((eachRemove) => {
     eachRemove.addEventListener("click", () => {
       const element = document.querySelector(".output");
       element.remove();
