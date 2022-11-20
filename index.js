@@ -1,9 +1,9 @@
 const DOMSelectors = {
   button: document.getElementById("btn"),
   box: document.getElementById("container-box"),
-  input: document.querySelector(`#name`),
-  input2: document.querySelector(`#weapon`),
-  input3: document.querySelector(`#url`),
+  input: document.getElementById("name"),
+  input2: document.getElementById("weapon"),
+  input3: document.getElementById("url"),
   output: document.getElementById("output-box"),
 };
 
