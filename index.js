@@ -26,8 +26,10 @@ DOMSelectors.button.addEventListener("click", function () {
   const removes = document.querySelectorAll(".remove");
   removes.forEach((eachRemove) => {
     eachRemove.addEventListener("click", () => {
-      const element = document.querySelector(".output");
-      element.remove();
+      const outputs = document.querySelector(".output");
+      outputs.forEach((eachOutput) => {
+        eachOutput.remove();
+      });
       eachRemove.remove();
     });
   });
