@@ -15,7 +15,7 @@ p {
 }
 
 .output {
-    background-color: rgb(54, 98, 243);
+    background-color: rgb(41, 88, 241);
     margin-bottom: 20px;
     padding: 20px;
     margin-left: 15px;
@@ -25,8 +25,8 @@ p {
 }
 
 h3 {
-    background-color: rgb(54, 98, 243);
-    margin-bottom: 5px;
+    background-color: transparent;
+    margin-bottom: 10px;
     font-size: 20px;
 }
 .title {
@@ -35,7 +35,7 @@ h3 {
 }
 
 .image {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     width: 100%;
 }
 
