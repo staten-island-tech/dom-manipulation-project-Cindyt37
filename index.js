@@ -9,11 +9,8 @@ const DOMSelectors = {
 
 DOMSelectors.button.addEventListener("click", function () {
   let input = DOMSelectors.input.value;
-  DOMSelectors.input.value = "";
   let input2 = DOMSelectors.input2.value;
-  DOMSelectors.input2.value = "";
   let input3 = DOMSelectors.input3.value;
-  DOMSelectors.input3.value = "";
   DOMSelectors.output.insertAdjacentHTML(
     "afterbegin",
     `<div class="output">
@@ -23,14 +20,18 @@ DOMSelectors.button.addEventListener("click", function () {
         <button class="remove">Remove</button>
         </div>`
   );
+
+  function clear() {
+    DOMSelectors.input.value = "";
+    DOMSelectors.input2.value = "";
+    DOMSelectors.input3.value = "";
+  }
+  clear();
+
   const removes = document.querySelectorAll(".remove");
   removes.forEach((eachRemove) => {
-    eachRemove.addEventListener("click", () => {
-      const outputs = document.querySelector(".output");
-      outputs.forEach((eachOutput) => {
-        eachOutput.remove();
-      });
-      eachRemove.remove();
+    eachRemove.addEventListener("click", function (button) {
+      button.target.parentElement.remove();
     });
   });
 });
