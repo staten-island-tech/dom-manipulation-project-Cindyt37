@@ -15,8 +15,8 @@ DOMSelectors.button.addEventListener("click", function () {
     "afterbegin",
     `<div class="output">
         <h3 class="title">${input}</h3>
-        <img class="image" src="${input3}">
         <h3 class="weapon">${input2}</h3>
+        <img class="image" src="${input3}">
         <button class="remove">Remove</button>
         </div>`
   );
